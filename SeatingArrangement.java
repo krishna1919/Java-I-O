@@ -1,3 +1,26 @@
+/*
+Understand that the entire coach contains of blocks that are of the SAME pattern. Find the logic behind one block, and the same can be applied to the entire problem.
+
+So, whatever input you get, convert it into simple, workable numbers, That is between 1 to 12 ( To model like the first block of seats)
+
+To do that, do (input % 12) and you'll be able to work with numbers 0 to 11
+
+The logic is very simple and can be implemented using a switch case or an if-else construct. Just implement the structure of the first block as your logic.
+
+1 is opposite to 12, 6 is opposite to 7 --> All 4 of these are Window Seats (WS)
+2 is opposite to 11, 5 is opposite to 8 --> All 4 of these are Middle Seats (MS)
+3 is opposite to 10, 4 is opposite to 9 --> All 4 of these are Aisle Seats (AS)
+.........
+understand this series ..
+1+11=12
+2+9=11
+3+7=10
+4+5=9
+5+3=8
+6+1=7
+Here if you concentrate in every row first no. and third no. are opposite like seat in the train..
+*/
+
 import java.util.*;
 class SeatingArrangement {
     public static void main(String args[] ) throws Exception {
